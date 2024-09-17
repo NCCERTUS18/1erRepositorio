@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+   header {
+    background-color: rgb(233, 128, 9);
+    color:white;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+   }
+
+   .absolute-measure {
+    width: 300px;
+    height: 150px;
+   }
+
+   .relative-measure {
+    width: 45%;
+    height: 45vh;
+   }
+
+   .absolute-measure, .relative-measure {
+    border: 2px solid #db8008;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: white;
+   }
+
+   footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}
