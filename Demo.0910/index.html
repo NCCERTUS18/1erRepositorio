@@ -1,0 +1,55 @@
+<html lang="es"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Países</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Consulta de Países</h1>
+    </header>
+    <main>
+        <form id="countryForm">
+            <label for="countryInput">Ingrese el nombre de un país:</label>
+            <input type="text" id="countryInput" name="countryInput" required="" autocomplete="off">
+            <ul id="suggestions" class="suggestions"></ul>
+            <button type="submit">Buscar</button>
+        </form>
+        <div id="results">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Bandera</th>
+                        <th>Nombre</th>
+                        <th>Capital</th>
+                        <th>Región</th>
+                        <th>Población</th>
+                    </tr>
+                </thead>
+                <tbody id="resultsBody">
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="script.js"></script>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyB3WonEloFrA1_pu5WtJmwssQpWGpF7-jY",
+          authDomain: "proyectopaises-001.firebaseapp.com",
+          projectId: "proyectopaises-001",
+          storageBucket: "proyectopaises-001.appspot.com",
+          messagingSenderId: "998221105034",
+          appId: "1:998221105034:web:304567fb3d1c7cb7fcea73"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      </script>
+</body></html>
